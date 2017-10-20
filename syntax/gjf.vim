@@ -41,7 +41,7 @@ syn keyword ComMethod s xa b pw91 mpw g96 pbe o tpss revtpss brx pkzb wpbeh pbeh
 syn region  ComDoubleQuote   start=+"+ skip=+\\"+ end=+"+
 syn region ComStartup start=/%/ end='[=$]' contains=ComLink0
 syn match ComRoute /#.*$/ contains=ComBasis,ComCmd,ComOption,ComMethod
-syn match ComAtom    ' \a\((.*)\)\= '
+syn match ComAtom    '^[A-Za-z]\{1,2\}\s'
 
 " Comments: {{{1
 "==========
